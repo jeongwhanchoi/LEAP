@@ -48,8 +48,8 @@ python3 -u uea.py --dataset_name CharacterTrajectories --h_channels 40 --hh_chan
 ```
 
 ## BASELINES UEA 
-# NEEDS data preprocessing. (Due to the submission memory limitation)
-# When you run this code, it would start from preprocessing step (it may take a while.).
+### NEEDS data preprocessing. (Due to the submission memory limitation)
+### When you run this code, it would start from preprocessing step (it may take a while.).
 
 ```
 python3 -u uea.py --dataset_name CharacterTrajectories --h_channels 40 --hh_channels 100 --layer 3 --lr 0.001 --c1 1e-6 --c2 0 --method "rk4" --weight_decay 0  --intensity 'True' --missing_rate 0.3 --model='dt'
