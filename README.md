@@ -5,12 +5,13 @@
   <img align="middle" src="./LEAP_1129.png" alt="LEAP"/> 
   The overall architecture of LEAP
 </p>
+### create conda environments
 ## install conda environments 
 
 ```
 conda env create --file leap.yml 
 ```
-## train LEAP 
+### train LEAP 
 
 ```
 conda activate leap
@@ -61,4 +62,15 @@ python3 -u uea.py --dataset_name CharacterTrajectories --h_channels 40 --hh_chan
 python3 -u uea.py --dataset_name CharacterTrajectories --h_channels 40 --hh_channels 100 --layer 3 --lr 0.001 --c1 1e-6 --c2 0 --method "rk4" --weight_decay 0  --intensity 'True' --missing_rate 0.3 --model='dt'
 python3 -u uea.py --dataset_name CharacterTrajectories --h_channels 40 --hh_channels 100 --layer 3 --lr 0.001 --c1 1e-6 --c2 0 --method "rk4" --weight_decay 0  --intensity 'True' --missing_rate 0.3 --model='decay'
 python3 -u uea.py --dataset_name CharacterTrajectories --h_channels 40 --hh_channels 100 --layer 3 --lr 0.001 --c1 1e-6 --c2 0 --method "rk4" --weight_decay 0  --intensity 'True' --missing_rate 0.3 --model='odernn'
+```
+
+
+### Citation
+```bibtex
+@article{jhin2023learnable,
+  title={Learnable Path in Neural Controlled Differential Equations},
+  author={Jhin, Sheo Yon and Jo, Minju and Kook, Seungji and Park, Noseong and Woo, Sungpil and Lim, Sunhwan},
+  journal={AAAI},
+  year={2023}
+}
 ```
