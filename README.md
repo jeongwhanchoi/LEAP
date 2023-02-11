@@ -1,4 +1,10 @@
 
+<h1 align='center'> Learnable Path in Neural Controlled Differential Equations [<a href="https://arxiv.org/abs/2301.04333">arXiv</a>] </h1>
+
+<p align="center">
+  <img align="middle" src="./imgs/LEAP_1129.png" alt="LEAP"/> 
+  The overall architecture of LEAP
+</p>
 ## install conda environments 
 
 ```
